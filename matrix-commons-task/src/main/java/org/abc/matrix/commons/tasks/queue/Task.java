@@ -3,7 +3,7 @@ package org.abc.matrix.commons.tasks.queue;
 /**
  * 基础的task
  * <p/>
- * Created by chenhui on 16/10/11.
+ * Created by wanjia on 16/10/11.
  */
 public class Task<T> {
 

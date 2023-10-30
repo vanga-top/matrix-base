@@ -6,7 +6,7 @@ import org.abc.matrix.commons.lang.result.BaseResult;
 /**
  * 每个线程对每行数据的处理
  * <p>
- * Created by chenhui on 16/11/18.
+ * Created by wanjia on 16/11/18.
  */
 public interface RowdataProcessor<T> {
 

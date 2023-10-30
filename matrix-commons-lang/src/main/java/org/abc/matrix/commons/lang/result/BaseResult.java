@@ -6,7 +6,7 @@ import java.io.Serializable;
  * 基本的返回结果类型,用于平台数据类型返回
  * <p/>
  * <p/>
- * Created by chenhui on 16/9/27.
+ * Created by wanjia on 16/9/27.
  */
 public class BaseResult<T> implements Serializable {
 

@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 /**
  * 重试模版
  * <p/>
- * Created by chenhui on 15/10/20.
+ * Created by wanjia on 15/10/20.
  */
 public abstract class RetryTransactionTemplate<E> {
     private static final int EXCUTE_NUM_DEFAULT = 1;

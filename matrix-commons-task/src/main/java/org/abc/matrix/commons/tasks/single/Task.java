@@ -3,7 +3,7 @@ package org.abc.matrix.commons.tasks.single;
 /**
  * 定义异步任务
  * <p>
- * Created by chenhui on 15/8/19.
+ * Created by wanjia on 15/8/19.
  */
 public abstract class Task {
 

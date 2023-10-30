@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * linked block queue
  * <p/>
- * Created by chenhui on 16/10/11.
+ * Created by wanjia on 16/10/11.
  */
 public class LinkedBlockDataQueue implements DataQueue, InitializingBean, DisposableBean {
 

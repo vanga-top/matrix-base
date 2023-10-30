@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 数据生产端
  * <p/>
- * Created by chenhui on 16/9/29.
+ * Created by wanjia on 16/9/29.
  */
 public interface DataQueue {
 

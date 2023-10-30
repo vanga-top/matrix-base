@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * 基于阻塞队列的生产者消费者模式
  * <p>
  * <p>
- * Created by chenhui on 16/11/18.
+ * Created by wanjia on 16/11/18.
  */
 public class DataTransfer<T> {
 

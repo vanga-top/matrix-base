@@ -17,7 +17,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * @author huali
  * @author 智清 修改时间：2011-09-21
- * @author gais.ch 修改时间2014-11-01
+ * @author wanjia 修改时间2014-11-01
  */
 public final class TaskManager {
 

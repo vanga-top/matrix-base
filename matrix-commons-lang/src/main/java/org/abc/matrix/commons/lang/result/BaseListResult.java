@@ -2,7 +2,7 @@ package org.abc.matrix.commons.lang.result;
 
 /**
  * 带分页类型的返回
- * Created by chenhui on 16/9/27.
+ * Created by wanjia on 16/9/27.
  */
 public class BaseListResult<T> extends BaseResult<T> {
 

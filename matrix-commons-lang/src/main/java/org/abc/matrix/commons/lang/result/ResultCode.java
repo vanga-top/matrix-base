@@ -6,7 +6,7 @@ package org.abc.matrix.commons.lang.result;
  * 2、3区段  表示业务逻辑异常 如未登陆，参数不正确
  * 4004  表示未知异常，（自定义异常MSG）
  *
- * Created by weiqing on 16/10/26.
+ * Created by wanjia on 16/10/26.
  */
 public  interface ResultCode {
 

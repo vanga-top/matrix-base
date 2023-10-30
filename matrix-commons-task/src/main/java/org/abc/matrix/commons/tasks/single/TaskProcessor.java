@@ -3,7 +3,7 @@ package org.abc.matrix.commons.tasks.single;
 /**
  * 定义处理器，用于扩展来处理任务
  * <p/>
- * Created by chenhui on 15/8/19.
+ * Created by wanjia on 15/8/19.
  */
 public abstract class TaskProcessor {
 
