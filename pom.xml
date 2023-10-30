@@ -36,6 +36,17 @@
                 <artifactId>spring-beans</artifactId>
                 <version>6.0.3</version>
             </dependency>
+            <dependency>
+                <groupId>org.netbeans.external</groupId>
+                <artifactId>org-apache-commons-lang3</artifactId>
+                <version>RELEASE130</version>
+            </dependency>
+            <dependency>
+                <groupId>org.abc</groupId>
+                <artifactId>matrix-commons-lang</artifactId>
+                <scope>compile</scope>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
