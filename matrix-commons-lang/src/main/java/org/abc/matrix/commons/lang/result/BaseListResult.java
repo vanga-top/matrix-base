@@ -21,7 +21,7 @@ public class BaseListResult<T> extends BaseResult<T> {
     private int pageSize;
 
 
-    public BaseListResult(T resultData, boolean success, String code, String resultMessage) {
+    public BaseListResult(T resultData, boolean success, int code, String resultMessage) {
         super(resultData, success, code, resultMessage);
     }
 

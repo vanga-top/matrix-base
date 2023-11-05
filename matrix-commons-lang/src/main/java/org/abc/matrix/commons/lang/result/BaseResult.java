@@ -24,7 +24,7 @@ public class BaseResult<T> implements Serializable {
     /**
      * 返回处理的code
      */
-    private String code;
+    private int code;
 
     /**
      * 返回内容的信息
@@ -43,7 +43,7 @@ public class BaseResult<T> implements Serializable {
      * @param success
      * @param resultMessage
      */
-    public BaseResult(T resultData, boolean success, String code, String resultMessage) {
+    public BaseResult(T resultData, boolean success, int code, String resultMessage) {
         this.resultData = resultData;
         this.success = success;
         this.code = code;
@@ -77,11 +77,11 @@ public class BaseResult<T> implements Serializable {
         return this;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public BaseResult setCode(String code) {
+    public BaseResult setCode(int code) {
         this.code = code;
         return this;
     }
@@ -92,7 +92,7 @@ public class BaseResult<T> implements Serializable {
      * @param resultMessage
      * @return
      */
-    public BaseResult setErrorReturn(String code, String resultMessage) {
+    public BaseResult setErrorReturn(int code, String resultMessage) {
         this.resultMessage = resultMessage;
         this.code = code;
         this.success = false;
@@ -105,12 +105,21 @@ public class BaseResult<T> implements Serializable {
      * @param resultData
      * @return
      */
-    public BaseResult setSuccessfulReturn(T resultData, String code, String resultMessage) {
+    public BaseResult<T> setSuccessfulReturn(T resultData, int code, String resultMessage) {
         this.resultData = resultData;
         this.code = code;
         this.success = true;
         this.resultMessage = resultMessage;
         return this;
+    }
+
+    public static <T> BaseResult<T> error(int code, T resultData, String resultMessage) {
+        BaseResult<T> result = new BaseResult<>();
+        result.success = false;
+        result.code = code;
+        result.resultData = resultData;
+        result.resultMessage = resultMessage;
+        return result;
     }
 
     @Override
