@@ -105,12 +105,13 @@ public class BaseResult<T> implements Serializable {
      * @param resultData
      * @return
      */
-    public BaseResult<T> setSuccessfulReturn(T resultData, int code, String resultMessage) {
-        this.resultData = resultData;
-        this.code = code;
-        this.success = true;
-        this.resultMessage = resultMessage;
-        return this;
+    public static <T> BaseResult<T> success(int code, T resultData, String resultMessage) {
+        BaseResult<T> result = new BaseResult<>();
+        result.resultData = resultData;
+        result.code = code;
+        result.success = true;
+        result.resultMessage = resultMessage;
+        return result;
     }
 
     public static <T> BaseResult<T> error(int code, T resultData, String resultMessage) {
