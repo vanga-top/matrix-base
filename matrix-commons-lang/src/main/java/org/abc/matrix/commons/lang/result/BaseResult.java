@@ -8,7 +8,7 @@ import java.io.Serializable;
  * <p/>
  * Created by wanjia on 16/9/27.
  */
-public class BaseResult<T> implements Serializable {
+public class BaseResult<T> implements Result<T>, Serializable {
 
     /**
      * 返回的数据结果
@@ -54,36 +54,32 @@ public class BaseResult<T> implements Serializable {
         return resultData;
     }
 
-    public BaseResult setResultData(T resultData) {
+    public void setResultData(T resultData) {
         this.resultData = resultData;
-        return this;
     }
 
     public boolean isSuccess() {
         return success;
     }
 
-    public BaseResult setSuccess(boolean success) {
+    public void setSuccess(boolean success) {
         this.success = success;
-        return this;
     }
 
     public String getResultMessage() {
         return resultMessage;
     }
 
-    public BaseResult setResultMessage(String resultMessage) {
+    public void setResultMessage(String resultMessage) {
         this.resultMessage = resultMessage;
-        return this;
     }
 
     public int getCode() {
         return code;
     }
 
-    public BaseResult setCode(int code) {
+    public void setCode(int code) {
         this.code = code;
-        return this;
     }
 
     /**
